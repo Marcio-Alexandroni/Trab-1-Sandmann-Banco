@@ -37,4 +37,14 @@ public abstract class Cliente {
         return "Cliente [nome = " + nome + ", id = " + id + "]";
     }
 
+    @Override
+    public int hashCode() {
+        return id.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return obj != null && obj instanceof Cliente && ((Cliente) obj).id.equals(this.id);
+    }
+
 }
