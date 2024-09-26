@@ -1,3 +1,4 @@
+
 // Fazer a classe cliente que poderá ser extendida para PessoaFísica ou PessoaJurídica | Apenas atributos em comum deverão ser colocados (ex: nome, id - UUID)
 
 import java.util.UUID;
@@ -12,8 +13,10 @@ public abstract class Cliente {
     }
 
     public Cliente(String nome){
+
         this();
         this.nome = nome;
+
     }
 
     public String getNome() {

@@ -1,3 +1,4 @@
+
 // Classe reservada para o Banco e suas funcionalidades
 
 import java.util.Collection;
@@ -37,7 +38,7 @@ public class Banco {
         Collection<Cliente> colecao = clientes.values();
         colecao = Collections.unmodifiableCollection(colecao);
         return Collections.unmodifiableSet(new HashSet<>(colecao));
-        
+
     }
 
 }
