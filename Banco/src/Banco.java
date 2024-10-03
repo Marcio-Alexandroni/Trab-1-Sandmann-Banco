@@ -27,8 +27,14 @@ public class Banco {
     public void add(Cliente cliente) {
 
         clientes.put(cliente.getId(), cliente);
-        if (cliente instanceof PessoaFisica pf) clientebyCPF.put(pf.getCPF(), pf);
-        if (cliente instanceof PessoaJuridica pj) clientebyCNPJ.put(pj.getCNPJ(), pj);
+        if (cliente instanceof PessoaFisica) {
+            PessoaFisica pf = (PessoaFisica) cliente;
+            clientebyCPF.put(pf.getCpf(), pf);
+        }
+        if (cliente instanceof PessoaJuridica) {
+            PessoaJuridica pj = (PessoaJuridica) cliente;
+            clientebyCNPJ.put(pj.getCnpj(), pj);
+        }
     
     }
 
@@ -39,5 +45,6 @@ public class Banco {
         return Collections.unmodifiableSet(new HashSet<>(colecao));
 
     }
+    
 
 }
