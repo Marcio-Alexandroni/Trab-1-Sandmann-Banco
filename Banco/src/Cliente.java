@@ -1,10 +1,14 @@
 
 // Fazer a classe cliente que poderá ser extendida para PessoaFísica ou PessoaJurídica | Apenas atributos em comum deverão ser colocados (ex: nome, id - UUID)
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 public abstract class Cliente {
     
+    private List<Conta> contas = new ArrayList<>();
+
     String nome;
     String id;
 
@@ -48,6 +52,10 @@ public abstract class Cliente {
     @Override
     public boolean equals(Object obj) {
         return obj != null && obj instanceof Cliente && ((Cliente) obj).id.equals(this.id);
+    }
+
+    public List<Conta> getContas() {
+        return contas;
     }
 
 }

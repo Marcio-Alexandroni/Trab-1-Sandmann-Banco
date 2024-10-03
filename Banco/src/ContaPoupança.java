@@ -8,19 +8,24 @@ public class ContaPoupança extends Conta implements Rendimento {
     }
 
     @Override
+    public double getTaxa() {
+        return 0.05;
+    }
+    
+    @Override
     public void aplicar() {
         saldo += saldo * getTaxa();
     }
 
     @Override
-    public double getTaxa() {
-        return 0.05;
-    }
-
     public void sacar(double valor) {
+
         if (valor <= saldo) {
             this.saldo -= valor;
+        } else {
+            throw new RuntimeException("Saldo insuficiente");
         }
+
     }
     
 }

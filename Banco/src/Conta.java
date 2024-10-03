@@ -19,6 +19,10 @@ public abstract class Conta {
         return cliente;
     }
 
+    public String getId() {
+        return id;
+    }
+
     public double getSaldo() {
         return saldo;
     }
