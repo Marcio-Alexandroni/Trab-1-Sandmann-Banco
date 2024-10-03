@@ -14,7 +14,7 @@ public class Banco {
     private String nome;
 
     private Map<String, Cliente> clientes = new HashMap<>();
-    private Mao<String, PessoaFisica> clientebyCPF = new HashMap<>();
+    private Map<String, PessoaFisica> clientebyCPF = new HashMap<>();
     private Map<String, PessoaJuridica> clientebyCNPJ = new HashMap<>();
 
     public Banco(String nome) {

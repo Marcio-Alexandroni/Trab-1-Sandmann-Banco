@@ -7,13 +7,13 @@ import java.util.Scanner;
 public class Console {
 
     private static Banco banco = new Banco("Russin Bank");
-    private static final Scnaner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
 
         System.out.println("Bem vindo ao " + banco.getNome());
         while (true) {
-            Sysout.println("> ");
+            System.out.print("> ");
             String linha = scanner.nextLine().trim();
             if (linha.equalsIgnoreCase("exit")) {
                 break;
@@ -32,7 +32,7 @@ public class Console {
     private static void listCustomers(){
 
         System.out.println("--- Lista de clientes:");
-        banco,getClientes().forEach(System.out::println);
+        banco.getClientes().forEach(System.out::println);
 
     }
 

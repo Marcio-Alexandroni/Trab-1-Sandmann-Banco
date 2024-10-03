@@ -3,7 +3,7 @@
 
 public class ContaCorrente extends Conta {
 
-    public ContaCorrenteq(Cliente cliente) {
+    public ContaCorrente(Cliente cliente) {
         super(cliente);
     }
 
