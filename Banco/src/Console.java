@@ -13,10 +13,10 @@ public class Console {
         Cliente clienteAtual = null;
         Conta contaAtual = null;
 
-         
-
         while (true) {
+
             try {
+
                 // Ajuste no prompt para sempre mostrar o nome do cliente e, se tiver, a conta
                 StringBuffer radical = new StringBuffer();
                 radical.append(clienteAtual == null ? "" : clienteAtual.getNome());
@@ -43,12 +43,16 @@ public class Console {
                 else JOptionPane.showMessageDialog(null, "Comando inválido");
 
             } catch (RuntimeException e) {
+
                 e.printStackTrace();
                 JOptionPane.showMessageDialog(null, e.getMessage());
+
             }
+
         }
 
         JOptionPane.showMessageDialog(null, "Obrigado por usar o " + banco.getNome());
+        
     }
 
 }

@@ -6,13 +6,17 @@ public class PessoaFisica extends Cliente {
     private final String cpf;
 
     public PessoaFisica(String cpf) {
+
         super();
         this.cpf = cpf;
+
     }
 
     public PessoaFisica(String cpf, String nome) {
+
         super(nome);
         this.cpf = cpf;
+
     }
 
     public String getCpf() {
@@ -24,5 +28,4 @@ public class PessoaFisica extends Cliente {
         return super.toString() + " (" + cpf + ")";
     }
 
-    
 }

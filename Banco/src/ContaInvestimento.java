@@ -17,17 +17,21 @@ public class ContaInvestimento extends Conta implements Rendimento {
 
     @Override
     public void depositar(double valor) {
+
         super.depositar(valor);
         this.qtdDepositos += 1;
+
     }
 
     @Override
     public void sacar(double valor) {
+
         if (valor <= saldo && (qtdDepositos % 3) == 0) {
             this.saldo =- valor;
         } else {
             throw new RuntimeException("Saque não permitido");
         }
+        
     }
 
     public int getQtdDepositos() {

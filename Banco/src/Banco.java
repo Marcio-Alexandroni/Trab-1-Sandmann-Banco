@@ -44,7 +44,6 @@ public class Banco {
         colecao = Collections.unmodifiableCollection(colecao);
         return Collections.unmodifiableSet(new HashSet<>(colecao));
 
-    }
-    
+    } 
 
 }
