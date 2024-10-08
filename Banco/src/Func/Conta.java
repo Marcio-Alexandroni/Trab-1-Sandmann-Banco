@@ -1,3 +1,4 @@
+package Func;
 
 // Essa será uma superclasse para as outras Contas do Banco
 

@@ -1,3 +1,4 @@
+package Func;
 
 // Fazer a classe cliente que poderá ser extendida para PessoaFísica ou PessoaJurídica | Apenas atributos em comum deverão ser colocados (ex: nome, id - UUID)
 
