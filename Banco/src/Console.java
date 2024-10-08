@@ -7,9 +7,13 @@ public class Console {
     private static Banco banco = new Banco("Russin Bank");
 
     public static void main(String[] args) {
+
+        BancoUtils.showWelcomeMessage(); 
         
         Cliente clienteAtual = null;
         Conta contaAtual = null;
+
+         
 
         while (true) {
             try {
