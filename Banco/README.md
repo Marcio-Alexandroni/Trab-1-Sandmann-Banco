@@ -1,18 +1,32 @@
-## Getting Started
+---
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# Russin Bank Project
 
-## Folder Structure
+## Project Overview
+The *Russin Bank* is a project developed as part of the Object-Oriented Programming (OOP) course at ESPM. It was led by *Professor Humberto Sandmann* and developed by *Henrique Lecce, **Márcio Alexandroni, **João Pedro Helbel, and **Paulo Cesar Junior*.
 
-The workspace contains two folders by default, where:
+This project showcases key OOP principles by simulating banking operations, including account management and user interactions through a graphical user interface (GUI) utilizing JOptionPane.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Features
+- Account creation and management
+- Balance inquiry
+- Deposit and withdrawal functionality
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Technologies Used
+- *Programming Language:* Java
+- *IDE:* Visual Studio Code (VSCode)
+- *Version Control:* Git
+- *License:* MIT License
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## How to Run
+1. Clone the repository:
+   bash
+   git clone https://github.com/Marcio-Alexandroni/Trab-1-Sandmann-Banco
+   
+2. Open the project in Visual Studio Code.
+3. Build the project and run the Main class to start the application.
 
-## Dependency Management
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+---
